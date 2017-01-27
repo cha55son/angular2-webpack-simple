@@ -1,0 +1,29 @@
+<nav>
+  <a [routerLink]=" ['./'] " routerLinkActive="active">
+    Index
+  </a>
+  <a [routerLink]=" ['./analyst-queue'] " routerLinkActive="active">
+    Analyst Queue
+  </a>
+  <a [routerLink]=" ['./action-pending-queue'] " routerLinkActive="active">
+    Action Pending Queue
+  </a>
+  <a [routerLink]=" ['./detail'] " routerLinkActive="active">
+    Detail
+  </a>
+  <a [routerLink]=" ['./barrel'] " routerLinkActive="active">
+    Barrel
+  </a>
+  <a [routerLink]=" ['./about'] " routerLinkActive="active">
+    About
+  </a>
+</nav>
+<main>
+  <router-outlet></router-outlet>
+</main>
+<div class="state-indicator">
+  <pre class="app-state">this.appState.state = {{ appState.state | json }}</pre>
+</div>
+<footer>
+  Chason Choate
+</footer>
